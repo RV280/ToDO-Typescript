@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo Manager</title>
-    <script src="app.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
-
 <body>
-    <h1>ToDo Manager</h1>
+    <h1>TODO Manager</h1>
+
     <div class="taskForm">
-        <label for="taskName">Task Name: 
-            <input type="text" name="taskName" id="taskName" required>
-        </label>
-
-        <label for="assignee">Assignee: 
-            <input type="text" name="assignee" id="taskAssignee" required>
-        </label>
-
-        <label for="dueDate">Due Date: 
-            <input type="date" name="dueDate" id="dueDate" required>
-        </label>
-    </div>
-    <button job="submit">Add Task</button>
-    <br>
+            <div class="form">
+                <label for="task">Task Details:</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="task" name="task">
+            </div>
+            <div class="form">
+                <label>Assignee:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="assignee">
+                <option>Choose an Assignee</option>
+            </select><div id="nameinvalid"></div>
+            </div>
+            <div class="form">
+                <label for="dueDate">Due Date:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="date" name="dueDate" id="dueDate" >
+            </div>
+        <button class="btn" onclick="insertToDoTask()">Submit Task</button>
+        <br>
         <br>
 
         <h2>In Progress</h2>
@@ -45,10 +43,11 @@
                 <th>Task Details</th>
                 <th>Assignee</th>
                 <th>Due Date</th>
-                <th>Action</th>
             </tr>
         </table>
     </div>
+    
 
+    <script src="./app.js" defer> </script>
+ 
 </body>
-</html>
