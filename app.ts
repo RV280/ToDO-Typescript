@@ -114,7 +114,7 @@ function checkInput(taskValue : string, assigneeValue : string, dueDate : string
 }
 
 
-function appendTaskToCompletedTable(cell : NodeListOf<ChildNode>){
+function appendTaskToCompletedTable(cell : NodeListOf<ChildNode>): void{
     let completedTable = document.getElementById("completedTable") as HTMLTableElement;
     let completedTableRow = document.createElement("tr");
 
