@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Manager</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>ToDo Manager</h1>
+    <div class="taskForm">
+        <label for="taskName">Task Name: 
+            <input type="text" name="taskName" id="taskName" required>
+        </label>
+
+        <label for="assignee">Assignee: 
+            <input type="text" name="assignee" id="taskAssignee" required>
+        </label>
+
+        <label for="dueDate">Due Date: 
+            <input type="date" name="dueDate" id="dueDate" required>
+        </label>
+    </div>
+    <button job="submit">Add Task</button>
+    <br>
+        <br>
+
+        <h2>In Progress</h2>
+        <table style="width:80%" id="progressTable">
+            <tr>
+                <th>Task Details</th>
+                <th>Assignee</th>
+                <th>Due Date</th>
+                <th>Action</th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <h2>Completed Tasks</h2>
+        <table style="width:80%" id="completedTable">
+            <tr>
+                <th>Task Details</th>
+                <th>Assignee</th>
+                <th>Due Date</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
